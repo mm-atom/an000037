@@ -1,0 +1,6 @@
+{
+	"db": {
+		"type": "mysql",
+		"source": "mysql://mmstudio:Mmstudio123@127.0.0.1:3306/mmstudio?connectionLimit=5"
+	}
+}

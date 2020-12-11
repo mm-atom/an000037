@@ -22,5 +22,5 @@ test('postgres query', async (t) => {
 test('postgres count', async (t) => {
 	const [r] = await a(['select count(*) as cnt from test_tb001']);
 	console.error('11111', r);
-	t.is(r[0].cnt, 3n);
+	t.is(r[0].cnt, 3);
 });

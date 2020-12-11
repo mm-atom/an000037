@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   mariadb:
-    image: db
-    container_name: mariadb
+    image: mariadb
+    container_name: db
     restart: always
     volumes:
       - /home/taoqf/data/mysql:/var/lib/mysql
