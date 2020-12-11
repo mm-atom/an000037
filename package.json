@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/an000037",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "MariaDB/MySql数据库操作",
 	"scripts": {
 		"test": "tsc && ava ./tests/*.js",
