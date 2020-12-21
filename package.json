@@ -4,7 +4,7 @@
 	"description": "MariaDB/MySql数据库操作",
 	"scripts": {
 		"test": "tsc && ava ./tests/*.js",
-		"watch": "tsc -w & ava --watch ./tests/*.js",
+		"dev": "tsc -w & ava --watch ./tests/*.js",
 		"clean": "del-cli ./dist/",
 		"lint": "eslint ./src/**/*.ts",
 		"compile": "tsc",
@@ -44,12 +44,11 @@
 		"mariadb": "^2.5.2"
 	},
 	"devDependencies": {
-		"@mmstudio/config": "^1.1.0",
-		"@mmstudio/global": "^1.0.202004161717",
-		"@types/minio": "^7.0.6",
+		"@mmstudio/config": "latest",
+		"@mmstudio/global": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
-		"anylogger": "^1.0.9",
+		"anylogger": "latest",
 		"ava": "latest",
 		"del-cli": "latest",
 		"eslint": "latest",
@@ -58,8 +57,8 @@
 		"typescript": "next"
 	},
 	"peerDependencies": {
-		"@mmstudio/config": "latest",
-		"@mmstudio/global": "latest",
-		"anylogger": "latest"
+		"@mmstudio/config": "*",
+		"@mmstudio/global": "*",
+		"anylogger": "*"
 	}
 }

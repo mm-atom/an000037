@@ -12,7 +12,10 @@ type Table = Record<string, string | number | boolean>;
  * sql语句查询
  */
 export default function sql_query<T1 = Table, T2 = Table, T3 = Table, T4 = Table, T5 = Table, T6 = Table, T7 = Table, T8 = Table, T9 = Table, T10 = Table, T11 = Table, T12 = Table, T13 = Table, T14 = Table, T15 = Table, T16 = Table, T17 = Table, T18 = Table, T19 = Table, T20 = Table>(...sqls: [string, unknown[]][]) {
-	const conf = config.db;
+	const conf = config.db as {
+		type: 'mariadb' | 'mysql' | 'postgres';
+		source: string;
+	};
 	switch (conf.type) {
 		case 'mariadb':
 		case 'mysql':
