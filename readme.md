@@ -6,20 +6,6 @@
 
 ```json
 {
-	"db": {
-		"type": "mariadb",
-		"source": "mysql://mmstudio:Mmstudio123@127.0.0.1:3306/mmstudio?connectionLimit=5"
-	}
-}
-```
-
-或
-
-```json
-{
-	"db": {
-		"type": "mysql",
-		"source": "mysql://mmstudio:Mmstudio123@127.0.0.1:3306/mmstudio?connectionLimit=5"
-	}
+	"db":  "mysql://mmstudio:Mmstudio123@127.0.0.1:3306/mmstudio?connectionLimit=5"
 }
 ```
